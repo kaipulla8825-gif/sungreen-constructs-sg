@@ -195,9 +195,7 @@
 
 @utility gold-underline {
   position: relative;
-}
 
-@utility gold-underline {
   &::after {
     content: "";
     position: absolute;
@@ -209,3 +207,4 @@
     border-radius: 9999px;
   }
 }
+

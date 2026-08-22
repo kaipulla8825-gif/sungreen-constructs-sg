@@ -2,8 +2,6 @@
 
 build me a website for my construction company SUNGREEN CONSTRUCTIONS PTE LTD, Singapore.
 
-This project was built with [Lovable](https://lovable.dev).
-
 ## Build with Lovable
 
 Continue developing this project in the [Lovable editor](https://lovable.dev/projects/99f21370-a69f-4aa7-96eb-b173b6e4ea16).

@@ -71,28 +71,30 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] bg-background border-l border-gold/30">
               <div className="flex flex-col gap-8 pt-8">
-                <Link to="/" onClick={() => setOpen(false)} className="flex items-center gap-3">
-                  <img src={logo} alt="SUNGREEN" width={40} height={40} className="h-10 w-auto" />
-                  <div className="flex flex-col leading-tight">
-                    <span className="text-sm font-bold tracking-wide text-foreground">SUNGREEN</span>
-                    <span className="text-[10px] font-medium tracking-wider text-muted-foreground">CONSTRUCTIONS</span>
-                  </div>
-                </Link>
+                <SheetClose asChild>
+                  <Link to="/" className="flex items-center gap-3">
+                    <img src={logo} alt="SUNGREEN" width={40} height={40} className="h-10 w-auto" />
+                    <div className="flex flex-col leading-tight">
+                      <span className="text-sm font-bold tracking-wide text-foreground">SUNGREEN</span>
+                      <span className="text-[10px] font-medium tracking-wider text-muted-foreground">CONSTRUCTIONS</span>
+                    </div>
+                  </Link>
+                </SheetClose>
 
                 <nav className="flex flex-col gap-1">
                   {navLinks.map((link) => {
                     const isActive = pathname === link.to;
                     return (
-                      <Link
-                        key={link.to}
-                        to={link.to}
-                        onClick={() => setOpen(false)}
-                        className={`rounded-md px-3 py-3 text-sm font-medium transition-colors ${
-                          isActive ? "bg-gold/10 text-primary" : "text-muted-foreground hover:bg-muted hover:text-foreground"
-                        }`}
-                      >
-                        {link.label}
-                      </Link>
+                      <SheetClose key={link.to} asChild>
+                        <Link
+                          to={link.to}
+                          className={`rounded-md px-3 py-3 text-sm font-medium text-left transition-colors ${
+                            isActive ? "bg-gold/10 text-primary" : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                          }`}
+                        >
+                          {link.label}
+                        </Link>
+                      </SheetClose>
                     );
                   })}
                 </nav>

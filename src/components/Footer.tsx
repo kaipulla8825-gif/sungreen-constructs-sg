@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin, Phone, Mail, Linkedin } from "lucide-react";
-import logo from "@/assets/sungreen-logo.png";
+import logoAsset from "@/assets/sungreen-logo-t.png.asset.json";
+const logo = logoAsset.url;
 
 const footerLinks = [
   { label: "Home", to: "/" },

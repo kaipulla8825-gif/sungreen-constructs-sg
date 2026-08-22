@@ -2,10 +2,22 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import residentialImg from "@/assets/project-residential.jpg";
-import commercialImg from "@/assets/project-commercial.jpg";
-import industrialImg from "@/assets/project-industrial.jpg";
-import renovationImg from "@/assets/project-renovation.jpg";
+import s1 from "@/assets/site-1.jpg.asset.json";
+import s2 from "@/assets/site-2.jpg.asset.json";
+import s3 from "@/assets/site-3.jpg.asset.json";
+import s4 from "@/assets/site-4.jpg.asset.json";
+import s5 from "@/assets/site-5.jpg.asset.json";
+import s6 from "@/assets/site-6.jpg.asset.json";
+import s7 from "@/assets/site-7.jpg.asset.json";
+import s8 from "@/assets/site-8.jpg.asset.json";
+const heroImg = s4.url;
+const residentialImg = s8.url;
+const commercialImg = s6.url;
+const industrialImg = s7.url;
+const renovationImg = s2.url;
+const civilImg = s3.url;
+const rebarImg = s1.url;
+const drainImg = s5.url;
 
 export const Route = createFileRoute("/projects")({
   head: () => ({
@@ -23,50 +35,95 @@ export const Route = createFileRoute("/projects")({
 
 const projects = [
   {
-    title: "Landed Residence",
-    category: "Residential Construction",
-    location: "Singapore",
-    client: "Private Client",
+    title: "Tuas Nexus Infrastructure Works",
+    category: "Civil & Structural",
+    location: "Tuas Nexus Drive, Singapore",
+    client: "Main Contractor",
     contractor: "SUNGREEN CONSTRUCTIONS PTE LTD",
     value: "Upon request",
-    status: "Completed",
-    description: "A modern tropical landed home featuring open-plan living, generous natural ventilation and a private garden setting.",
-    image: residentialImg,
+    status: "Ongoing",
+    description: "Reinforced concrete foundations, pits and cast-in-situ structures executed with crane-and-skip concreting on an active industrial site.",
+    image: heroImg,
   },
   {
-    title: "Commercial Office Building",
-    category: "Commercial Construction",
-    location: "Singapore CBD",
-    client: "Commercial Client",
+    title: "Port Yard Canopy Structures",
+    category: "Industrial",
+    location: "Tuas, Singapore",
+    client: "Industrial Client",
     contractor: "SUNGREEN CONSTRUCTIONS PTE LTD",
     value: "Upon request",
     status: "Completed",
-    description: "A contemporary office development with glass curtain walls, efficient floor plates and integrated M&E services.",
+    description: "Steel canopy framing, column bases and hardstanding works across a large operational yard, coordinated around live traffic movements.",
     image: commercialImg,
   },
   {
-    title: "Industrial Warehouse",
-    category: "Industrial Construction",
-    location: "Singapore",
-    client: "Logistics Client",
+    title: "Yard Column & Deck Works",
+    category: "Industrial",
+    location: "Tuas, Singapore",
+    client: "Industrial Client",
     contractor: "SUNGREEN CONSTRUCTIONS PTE LTD",
     value: "Upon request",
-    status: "Completed",
-    description: "A high-clearance logistics facility built for operational efficiency, clear spans and heavy-duty flooring.",
+    status: "Ongoing",
+    description: "Column formwork, base construction and deck finishing carried out in phased sequences to keep the yard operational throughout.",
     image: industrialImg,
   },
   {
-    title: "Heritage Shophouse Restoration",
-    category: "Renovation / Restoration",
+    title: "School Perimeter Fencing & Kerb Works",
+    category: "Civil Works",
     location: "Singapore",
-    client: "Conservation Client",
+    client: "Institutional Client",
     contractor: "SUNGREEN CONSTRUCTIONS PTE LTD",
     value: "Upon request",
     status: "Completed",
-    description: "Sensitive restoration of a historic shophouse, preserving original facade details while upgrading internal systems.",
+    description: "Galvanised mesh fencing on cast-in-situ concrete plinths along a school boundary, including alignment to existing footpaths and drainage.",
+    image: residentialImg,
+  },
+  {
+    title: "Hoarding & Boundary Works",
+    category: "Civil Works",
+    location: "Singapore",
+    client: "Main Contractor",
+    contractor: "SUNGREEN CONSTRUCTIONS PTE LTD",
+    value: "Upon request",
+    status: "Completed",
+    description: "Site boundary hoarding and screened fencing installed adjacent to public housing, maintaining safety and privacy for residents.",
     image: renovationImg,
   },
+  {
+    title: "Drainage & Concrete Pavement Works",
+    category: "Civil & Structural",
+    location: "Tuas Nexus Drive, Singapore",
+    client: "Main Contractor",
+    contractor: "SUNGREEN CONSTRUCTIONS PTE LTD",
+    value: "Upon request",
+    status: "Ongoing",
+    description: "Cast-in-situ drains, gratings and concrete pavement laid and finished to level, including formwork, rebar and surface treatment.",
+    image: civilImg,
+  },
+  {
+    title: "Reinforcement & Formwork Detailing",
+    category: "Civil & Structural",
+    location: "Tuas Nexus Drive, Singapore",
+    client: "Main Contractor",
+    contractor: "SUNGREEN CONSTRUCTIONS PTE LTD",
+    value: "Upon request",
+    status: "Ongoing",
+    description: "Wall reinforcement, embedded openings and galvanised grille installation prepared and inspected prior to concrete pour.",
+    image: rebarImg,
+  },
+  {
+    title: "Trench Drain Construction",
+    category: "Civil Works",
+    location: "Tuas, Singapore",
+    client: "Industrial Client",
+    contractor: "SUNGREEN CONSTRUCTIONS PTE LTD",
+    value: "Upon request",
+    status: "Completed",
+    description: "Reinforced trench drains with grating frames constructed alongside plant facilities, finished by hand for accurate falls.",
+    image: drainImg,
+  },
 ];
+
 
 function ProjectsPage() {
   return (

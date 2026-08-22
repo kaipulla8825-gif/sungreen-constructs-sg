@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
 const stats = [
   { value: "10+", label: "Years of Experience" },
   { value: "50+", label: "Projects Completed" },
-  { value: "X+", label: "Happy Clients" },
+  { value: "80+", label: "Happy Clients" },
   { value: "100%", label: "Safety Commitment" },
 ];
 

@@ -64,7 +64,7 @@ export function Header() {
             </a>
           </Button>
 
-          <Sheet open={open} onOpenChange={setOpen}>
+          <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="lg:hidden border-gold/30">
                 <Menu className="h-5 w-5" />

@@ -48,10 +48,10 @@ const services = [
 ];
 
 const featuredProjects = [
-  { title: "Landed Residence", location: "Singapore", image: residentialImg, category: "Residential" },
-  { title: "Commercial Office", location: "Singapore CBD", image: commercialImg, category: "Commercial" },
-  { title: "Industrial Warehouse", location: "Singapore", image: industrialImg, category: "Industrial" },
-  { title: "Heritage Shophouse", location: "Singapore", image: renovationImg, category: "Renovation" },
+  { title: "Tuas Nexus Infrastructure Works", location: "Tuas Nexus Drive, Singapore", image: heroImg, category: "Civil & Structural" },
+  { title: "Port Yard Canopy Structures", location: "Tuas, Singapore", image: commercialImg, category: "Industrial" },
+  { title: "School Perimeter Fencing", location: "Singapore", image: residentialImg, category: "Civil Works" },
+  { title: "Drainage & Concreting Works", location: "Tuas Nexus Drive, Singapore", image: civilImg, category: "Civil Works" },
 ];
 
 function HomePage() {

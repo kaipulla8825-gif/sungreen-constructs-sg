@@ -2,10 +2,22 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import residentialImg from "@/assets/project-residential.jpg";
-import commercialImg from "@/assets/project-commercial.jpg";
-import industrialImg from "@/assets/project-industrial.jpg";
-import renovationImg from "@/assets/project-renovation.jpg";
+import s1 from "@/assets/site-1.jpg.asset.json";
+import s2 from "@/assets/site-2.jpg.asset.json";
+import s3 from "@/assets/site-3.jpg.asset.json";
+import s4 from "@/assets/site-4.jpg.asset.json";
+import s5 from "@/assets/site-5.jpg.asset.json";
+import s6 from "@/assets/site-6.jpg.asset.json";
+import s7 from "@/assets/site-7.jpg.asset.json";
+import s8 from "@/assets/site-8.jpg.asset.json";
+const heroImg = s4.url;
+const residentialImg = s8.url;
+const commercialImg = s6.url;
+const industrialImg = s7.url;
+const renovationImg = s2.url;
+const civilImg = s3.url;
+const rebarImg = s1.url;
+const drainImg = s5.url;
 
 export const Route = createFileRoute("/projects")({
   head: () => ({

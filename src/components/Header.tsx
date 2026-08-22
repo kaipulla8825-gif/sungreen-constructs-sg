@@ -2,7 +2,8 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/sungreen-logo.png";
+import logoAsset from "@/assets/sungreen-logo-t.png.asset.json";
+const logo = logoAsset.url;
 
 const navLinks = [
   { to: "/", label: "Home" },

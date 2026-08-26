@@ -90,7 +90,7 @@ function ContactPage() {
                       <Phone className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
                       <span>
                         <strong className="block text-card-foreground">Phone</strong>
-                        <a href="tel:+6560000000" className="hover:text-primary transition-colors">+65 6000 0000</a>
+                        <a href="tel:+6585408140" className="hover:text-primary transition-colors">+65 8540 8140</a>
                       </span>
                     </li>
                     <li className="flex items-start gap-3 text-sm text-muted-foreground">
@@ -111,7 +111,7 @@ function ContactPage() {
                     Prefer messaging? Contact us on WhatsApp for quick project enquiries.
                   </p>
                   <Button asChild variant="outline" className="mt-4 w-full border-gold/40 text-foreground hover:bg-gold/10">
-                    <a href="https://wa.me/6560000000" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/6585408140" target="_blank" rel="noopener noreferrer">
                       Message on WhatsApp
                     </a>
                   </Button>
@@ -122,7 +122,15 @@ function ContactPage() {
 
           {/* Google Maps placeholder */}
           <div className="mt-12 overflow-hidden rounded-2xl border border-border/50 bg-muted aspect-[16/6] flex items-center justify-center">
-            <p className="text-sm text-muted-foreground">Google Maps embed — add your office location here</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6960659906576!2d103.83137647600313!3d1.3589919986281513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1700686e7fa3%3A0xa4a1f4139bf92b15!2sMidview%20City!5e0!3m2!1sen!2sin!4v1787417148172!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="strict-origin-when-cross-origin"
+        ></iframe>
           </div>
         </div>
       </section>

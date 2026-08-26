@@ -59,7 +59,7 @@ export function Header() {
               size="sm"
               className="hidden bg-brand hover:bg-brand/90 text-primary-foreground md:inline-flex"
             >
-              <a href="tel:+6560000000">
+              <a href="tel:+6585408140">
                 <Phone className="mr-2 h-4 w-4" />
                 Call Us
               </a>
@@ -132,7 +132,7 @@ export function Header() {
             asChild
             className="w-full bg-brand hover:bg-brand/90 text-primary-foreground"
           >
-            <a href="tel:+6560000000">
+            <a href="tel:+6585408140">
               <Phone className="mr-2 h-4 w-4" />
               Call Us
             </a>

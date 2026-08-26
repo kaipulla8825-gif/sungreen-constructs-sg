@@ -249,7 +249,7 @@ function HomePage() {
                 <Link to="/contact">Get a Free Consultation</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-gold/40 text-foreground hover:bg-gold/10">
-                <a href="tel:+6560000000">Call Us Now</a>
+                <a href="tel:+6585408140">Call Us Now</a>
               </Button>
             </div>
           </div>
